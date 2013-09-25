@@ -47,8 +47,8 @@
         <MakeDir Directories="$(DirBuildDeploy)" Condition="!Exists('$(DirBuildDeploy)')" />
     
         <ItemGroup Condition="'$(DirBuildBin)' != ''">
-            <ArchiveFiles Include="$(DirBuildBin)\nRefs.exe" />
-            <ArchiveFiles Include="$(DirBuildBin)\nRefs.exe.config" />
+            <ArchiveFiles Include="$(DirBuildBin)\nRefs.Console.exe" />
+            <ArchiveFiles Include="$(DirBuildBin)\nRefs.Console.exe.config" />
             <ArchiveFiles Include="$(DirBuildBin)\Lokad.Shared.dll" />
             <ArchiveFiles Include="$(DirBuildBin)\Nuclei.dll" />
             <ArchiveFiles Include="$(DirBuildBin)\Nuclei.Build.dll" />

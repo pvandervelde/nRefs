@@ -26,6 +26,18 @@
       <Value>xaml</Value>
     </CollectionProperty>
   </GlobalSettings>
+  <Parsers>
+    <Parser ParserId="StyleCop.CSharp.CsParser">
+      <ParserSettings>
+        <CollectionProperty Name="GeneratedFileFilters">
+          <Value>\.g\.cs$</Value>
+          <Value>\.generated\.cs$</Value>
+          <Value>\.g\.i\.cs$</Value>
+          <Value>TemporaryGeneratedFile_.*\.cs$</Value>
+        </CollectionProperty>
+      </ParserSettings>
+    </Parser>
+  </Parsers>
   <Analyzers>
     <Analyzer AnalyzerId="StyleCop.CSharp.NamingRules">
       <Rules>
@@ -132,8 +144,8 @@
         </Rule>
       </Rules>
       <AnalyzerSettings>
-        <StringProperty Name="CompanyName">Nuclei</StringProperty>
-        <StringProperty Name="Copyright">Copyright 2013 Nuclei. Licensed under the Apache License, Version 2.0.</StringProperty>
+        <StringProperty Name="CompanyName">nRefs</StringProperty>
+        <StringProperty Name="Copyright">Copyright 2013 nRefs. Licensed under the Apache License, Version 2.0.</StringProperty>
         <BooleanProperty Name="IgnorePrivates">True</BooleanProperty>
         <BooleanProperty Name="IgnoreInternals">True</BooleanProperty>
       </AnalyzerSettings>
@@ -256,7 +268,7 @@
         <StringProperty Name="SP2100_Limit">150:4</StringProperty>
         <StringProperty Name="SP2102_Limit">25</StringProperty>
         <StringProperty Name="SP2103_Limit">1000</StringProperty>
-        <StringProperty Name="AdvancedNaming_Words">FxCop IP StyleCop x64 x86</StringProperty>
+        <StringProperty Name="AdvancedNaming_Words">FxCop IP StyleCop x64 x86 nRefs</StringProperty>
         <StringProperty Name="AdvancedNaming_MethodGeneral">$(AaBb):$(AaBb)A$(AaBb)</StringProperty>
         <StringProperty Name="AdvancedNaming_ClassNotInternal">$(AaBb):$(AaBb)A$(AaBb)</StringProperty>
       </AnalyzerSettings>

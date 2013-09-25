@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>nRefs</id>
+        <version>${Version}</version>
+        <authors>P. van der Velde</authors>
+        <owners>P. van der Velde</owners>
+        <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+        <projectUrl>https://github.com/pvandervelde/nRefs</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>
+            Extracts the assembly dependencies from an assembly and dumps them in a file.
+        </description>
+        <releaseNotes>
+            ${ReleaseNotes}
+        </releaseNotes>
+    </metadata>
+    <files>
+        <file src="${DirBin}\nRefs.Console.exe" />
+        <file src="${DirBin}\nRefs.Console.exe.config" />
+        <file src="${DirBin}\Lokad.Shared.dll" />
+        <file src="${DirBin}\Nuclei.dll" />
+        <file src="${DirBin}\Nuclei.Build.dll" />
+    </files>
+</package>

@@ -65,7 +65,7 @@
         <FileNuSpec>$(DirBuildTemp)\nuget.nuspec</FileNuSpec>
         <FileReleaseNotes>$(DirBuildTemp)\releasenotes.txt</FileReleaseNotes>
     </PropertyGroup>
-    <Target Name="_BuildNugetPackageNuclei" DependsOnTargets="_DisplayInfo;_GatherReleaseNotes">
+    <Target Name="_BuildNugetPackage" DependsOnTargets="_DisplayInfo;_GatherReleaseNotes">
         <MakeDir Directories="$(DirBuildTemp)" Condition="!Exists('$(DirBuildTemp)')" />
         <MakeDir Directories="$(DirBuildDeploy)" Condition="!Exists('$(DirBuildDeploy)')" />
 
@@ -85,6 +85,6 @@
         </ItemGroup>
         <TemplateFile Template="$(FileTemplateNuSpec)" OutputFileName="$(FileNuSpec)" Tokens="@(NuSpecTokens)" />
         
-        <NuGetPack NugetPath="$(FileNuGetExe)" File="$(FileNuSpec)" OutputDirectory="$(DirBuildDeploy)" ShouldBuildSymbols="true" />
+        <NuGetPack NugetPath="$(FileNuGetExe)" File="$(FileNuSpec)" OutputDirectory="$(DirBuildDeploy)" ShouldBuildSymbols="false" />
     </Target>
  </Project>
