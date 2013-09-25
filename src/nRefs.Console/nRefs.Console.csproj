@@ -88,6 +88,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="$(SOFTWARE_SIGNING_KEY_PATH)">
+      <Link>Properties\App.snk</Link>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
